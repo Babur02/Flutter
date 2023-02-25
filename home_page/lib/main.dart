@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: MyApp(),
-  ));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -56,23 +53,20 @@ class MyApp extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              SizedBox(height: 05),
+              SizedBox(height: 16),
               CarouselSlider(
                 items: [
                   Image.network(
                     'https://cdn.pixabay.com/photo/2017/12/26/09/15/woman-3040029__340.jpg',
                     fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width,
                   ),
                   Image.network(
                     'https://t3.ftcdn.net/jpg/03/20/68/66/360_F_320686681_Ur6vdYQgDC9WiijiVfxlRyQffxOgfeFz.jpg',
                     fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width,
                   ),
                   Image.network(
                     'https://media.istockphoto.com/id/1254508881/photo/woman-holding-sale-shopping-bags-consumerism-shopping-lifestyle-concept.jpg?s=612x612&w=0&k=20&c=wuS3z6nPQkMM3_wIoO67qQXP-hfXkxlBc2sedwh-hxc=',
                     fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width,
                   ),
                 ],
                 options: CarouselOptions(
@@ -99,19 +93,18 @@ class MyApp extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   children: [
                     Image.network(
-                      'https://via.placeholder.com/150x100.png',
+                      'https://cdn.shopify.com/s/files/1/0057/8938/4802/files/446_380_445x.png?v=1676388029',
                       fit: BoxFit.cover,
-                      width: MediaQuery.of(context).size.width / 4,
                     ),
+                    SizedBox(width: 8),
                     Image.network(
-                      'https://via.placeholder.com/150x100.png',
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG9okD-2-RusD05m1w3EyhzMo2FjXzkNULtQ&usqp=CAU',
                       fit: BoxFit.cover,
-                      width: MediaQuery.of(context).size.width / 4,
                     ),
+                    SizedBox(width: 8),
                     Image.network(
-                      'https://via.placeholder.com/150x100.png',
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDVESGMgU6Hm97wIvd_ZQ4hPpncpgxg9r-JQ&usqp=CAU',
                       fit: BoxFit.cover,
-                      width: MediaQuery.of(context).size.width / 4,
                     ),
                   ],
                 ),
